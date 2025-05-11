@@ -1,0 +1,239 @@
+/* Main CSS file */
+:root {
+  --primary-color: #000;
+  --secondary-color: #f5f5dc;
+  --accent-color: #d4af37;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.hero-section {
+  background-image: url("./../../public/images/Header.jpg"); /* Replace with your image URL */
+  height: 120vh; /* Full height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Cover the entire area */
+  position: relative; /* Position relative for absolute positioning of text */
+
+  background-color: var(--secondary-color);
+  padding: 2rem 0;
+}
+
+.hero-content {
+  padding: 2rem;
+  position: absolute; /* Position text absolutely */
+  top: 50%; /* Center vertically */
+  left: 30%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  color: black; /* Text color */
+  /* text-align: center; Center text */
+}
+
+.hero-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-subheading {
+  font-weight: 500;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.jewelry-section {
+  /* background-color: var(--dark-color); */
+  color: white;
+  height: 90vh;
+  background-image: url("./../../public/images/Jewelry.jpg"); /* Replace with your image URL */
+  /* background-image: url('path/to/your/background-image.jpg'); Replace with your image path */
+  background-size: cover; /* This ensures the image covers the entire section */
+  background-position: center; /* Aligns the image to the center */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 50px; /* Adjust padding as needed */
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.jewelry-title {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.JEWELRY {
+  display: flex;
+  margin-top: 60vh;
+  margin-left: 9%;
+}
+.urban-section {
+  background-color: #eee;
+  padding: 4rem 0;
+}
+
+.urban-content {
+  padding: 2rem;
+}
+
+.urban-title {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.membership-section {
+  background-color: #ffeb3b;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.category-badge {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--dark-color);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 0.5rem;
+}
+
+.price-current {
+  font-weight: 700;
+  color: #d44;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .jewelry-title {
+    font-size: 2.5rem;
+  }
+  /* .JEWELRY {
+    margin-top: 40%;
+  } */
+
+  .urban-title {
+    font-size: 1.8rem;
+  }
+}
+/* @media (max-width: 575px) {
+  .JEWELRY {
+    margin-top: 50%;
+  }
+}
+@media (max-width: 435px) {
+  .JEWELRY {
+    margin-top: 70%;
+  }
+} */
