@@ -6,9 +6,14 @@
   --light-color: #f8f9fa;
   --dark-color: #212529;
 }
-
+@font-face {
+  font-family: "Dubai";
+  src: url("/public/Font/dubai-cufonfonts/Dubai-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Dubai", sans-serif;
 }
 
 .hero-section {
