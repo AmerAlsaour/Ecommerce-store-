@@ -21,7 +21,7 @@ body {
   height: 120vh; /* Full height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Cover the entire area */
+  background-size: cover; /* Cover the entire area */
   position: relative; /* Position relative for absolute positioning of text */
 
   background-color: var(--secondary-color);
@@ -224,6 +224,7 @@ footer {
   .jewelry-title {
     font-size: 2.5rem;
   }
+
   /* .JEWELRY {
     margin-top: 40%;
   } */
@@ -232,13 +233,17 @@ footer {
     font-size: 1.8rem;
   }
 }
-/* @media (max-width: 575px) {
-  .JEWELRY {
+
+@media (max-width: 575px) {
+  /* .JEWELRY {
     margin-top: 50%;
+  } */
+  .hero-content {
+    left: 50%;
   }
 }
 @media (max-width: 435px) {
-  .JEWELRY {
+  /* .JEWELRY {
     margin-top: 70%;
-  }
-} */
+  } */
+}
